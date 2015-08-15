@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task List</title>
+    <link rel="stylesheet" type="text/css" href="css/tasks.css">
+    <script>
+        require = {
+            baseUrl : 'scripts',
+            paths: {
+                jquery: 'jquery-2.1.4.min',
+                taskRenderer: 'App/taskRenderer',
+                taskData: 'App/taskData',
+                tasks: 'App/tasks',
+                appMain: 'App/app'
+            }
+        };
+    </script>
+    <script src="scripts/require.js" ></script>
+</head>
+
+<body>
+    <header>
+        <h1>Task List</h1>
+    </header>
+
+    <div class="toolbar">
+        <button id="new-task-button">New Task</button>
+        <button id="delete-all-button">Delete All</button>
+    </div>
+
+    <div id="content">
+        <ul id="task-list">
+        </ul>
+
+        <ul id="log-list">
+        </ul>
+    </div>
+
+    <div class="toolbar">
+        <button id="save-button">Save</button>
+        <button id="cancel-button">Cancel</button>
+    </div>
+
+    <script>
+        require(["appMain"], function (app) {
+            app.init();
+    });
+    </script>
+</body>
+
+</html>
