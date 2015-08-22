@@ -12,6 +12,8 @@ namespace RequireJSAppMVC.Controllers
         public ActionResult Index()
         {
             return View();
+
+            // Trying again with a comment.
         }
     }
 }
