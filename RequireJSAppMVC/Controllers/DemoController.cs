@@ -14,6 +14,8 @@ namespace RequireJSAppMVC.Controllers
             return View();
 
             // Trying again with a comment.
+
+            // Third commit for this file.   Also adding an assembly to get a .csproj file change.
         }
     }
 }
